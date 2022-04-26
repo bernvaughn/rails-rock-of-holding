@@ -20,6 +20,10 @@
     <!-- this is a partial -->
     <%= render 'home/header' %>
     <div class="container">
+      <% if notice %>
+        <%= render 'layouts/alerts' %>
+      <% end %>
+      
       <%= yield %>
     </div>
 
